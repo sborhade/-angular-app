@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: darkgray;
+  padding-top: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: darkgray;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

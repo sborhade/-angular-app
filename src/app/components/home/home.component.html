@@ -1,0 +1,32 @@
+<div class="filters">
+  <!-- <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value=" name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+</div>
+<div class="movies">
+  <ng-container *ngFor="let movie of movies">
+    <div class="movie">
+      <!-- (click)="openMovieDetails(movie.ImdbId)" -->
+      <div class="movie-thumb-container">
+        <img
+           *ngIf="movie.Poster"
+            src="{{ movie.Poster }}"
+            alt="thumbnail"
+            class="movie-thumbnail"
+          />
+        <p *ngIf="!movie.Poster">No image</p>
+      </div>
+      <p class="movie-name">{{movie.Year}}</p>
+      <p class="movie-platforms">{{movie.Title}}</p>
+    </div>
+  </ng-container>
+</div>
